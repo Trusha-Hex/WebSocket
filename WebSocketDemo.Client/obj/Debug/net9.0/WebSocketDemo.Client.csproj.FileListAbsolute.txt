@@ -1,0 +1,14 @@
+E:\Trusha\WebSockets\WebSocketDemo.Client\bin\Debug\net9.0\WebSocketDemo.Client.exe
+E:\Trusha\WebSockets\WebSocketDemo.Client\bin\Debug\net9.0\WebSocketDemo.Client.deps.json
+E:\Trusha\WebSockets\WebSocketDemo.Client\bin\Debug\net9.0\WebSocketDemo.Client.runtimeconfig.json
+E:\Trusha\WebSockets\WebSocketDemo.Client\bin\Debug\net9.0\WebSocketDemo.Client.dll
+E:\Trusha\WebSockets\WebSocketDemo.Client\bin\Debug\net9.0\WebSocketDemo.Client.pdb
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\WebSocketDemo.Client.GeneratedMSBuildEditorConfig.editorconfig
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\WebSocketDemo.Client.AssemblyInfoInputs.cache
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\WebSocketDemo.Client.AssemblyInfo.cs
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\WebSocketDemo.Client.csproj.CoreCompileInputs.cache
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\WebSocketDemo.Client.dll
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\refint\WebSocketDemo.Client.dll
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\WebSocketDemo.Client.pdb
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\WebSocketDemo.Client.genruntimeconfig.cache
+E:\Trusha\WebSockets\WebSocketDemo.Client\obj\Debug\net9.0\ref\WebSocketDemo.Client.dll

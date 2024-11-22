@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Chat</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+            height: 200px;
+            overflow-y: scroll;
+        }
+
+        #input {
+            width: 80%;
+            padding: 5px;
+        }
+
+        button {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>WebSocket Chat</h2>
+    <div id="messages"></div>
+    <input type="text" id="input" placeholder="Enter your message">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        // Connect to the WebSocket server
+        const ws = new WebSocket('ws://localhost:5208/ws');
+
+        // Listen for messages from the server
+        ws.onmessage = function(event) {
+            const message = event.data;
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = "Server: " + message;
+            document.getElementById('messages').appendChild(messageDiv);
+        };
+
+        // Send message to the server
+        function sendMessage() {
+            const message = document.getElementById('input').value;
+            ws.send(message); // Send the message to the server
+            document.getElementById('input').value = ''; // Clear input field
+        }
+
+        // Handle WebSocket connection open event
+        ws.onopen = function() {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = "Connected to server";
+            document.getElementById('messages').appendChild(messageDiv);
+        };
+
+        // Handle WebSocket error event
+        ws.onerror = function() {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = "Error: Unable to connect to server";
+            document.getElementById('messages').appendChild(messageDiv);
+        };
+
+        // Handle WebSocket close event
+        ws.onclose = function() {
+            const messageDiv = document.createElement('div');
+            messageDiv.textContent = "Connection closed.";
+            document.getElementById('messages').appendChild(messageDiv);
+        };
+    </script>
+</body>
+</html>
